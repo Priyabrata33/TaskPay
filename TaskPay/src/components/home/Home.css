@@ -1,5 +1,5 @@
 .homeStyle {
-    background-color: #f9eee0;
+    background-color: #fefaf5;
     min-height: 100vh;
     display: grid;
     justify-content: center;
@@ -11,7 +11,7 @@
   }
   
   .contentContainer {
-    background-color: #f9eee0;
+    /* background-color: #f9eee0; */
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -31,13 +31,15 @@
     /* margin: 0 auto; */
   }
   
-  .column {
+  .imageColumn {
     width: 48%; /* Adjust width of each column */
     text-align: center;
+    height:300px;
+    background-color: gray;
   }
   
   .columnLeft {
-    width: 48%; /* Adjust width of each column */
+    width: 30%; /* Adjust width of each column */
     text-align: left;
   }
   
@@ -45,13 +47,17 @@
     position: relative;
     padding-bottom: 10px; /* Add some space below the line */
   }
-  
+  p{
+    color: #666;
+  }
+ 
+ 
   .headingLine {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 70%;
     height: 2px; /* Set the height of the line */
     background: linear-gradient(to right, #f19433 20%, transparent 80%); /* Gradient border */
   }
@@ -65,6 +71,41 @@
     height: fit-content;
     width: fit-content;
   }
+  .secondView{
+    min-height: 30vh;
+    font-family: 'Montserrat', sans-serif;
+    padding: 80px 80px;
+  }
+  .vector{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .vectorImage{
+    background-color: gray;
+    height: 200px;
+    width: 350px;
+  }
+ .vectorContents{
+    align-items: left;
+    justify-content: space-between;
+    width:70%;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+ }
+
+ .vectorContents h2{
+   margin-bottom: 10px;
+ }
+ /* .vectorContents p{
+  color: #666;
+ } */
+ .vectorContents p span{
+  font-weight: bold;
+ }
+ 
+
  
   @media only screen and (max-width: 600px) {
     .homeContent{
